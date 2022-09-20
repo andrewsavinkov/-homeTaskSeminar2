@@ -3,13 +3,13 @@
 7 -> да
 1 -> нет
 */
-string[] CreateWeekArray()
+string[] CreateWeekArray() // функция создает строковый массив, содержащий дни недели
 {
   string[] result = {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
   return result;
 }
 
-void IsWeekend ()
+void IsWeekend () // функция проверяет, является ли день выходным
 {
     string[] newWeek=CreateWeekArray();
     Console.WriteLine("Введите номер дня недели (1- пн, 2- вт, 3- ср, 4- чт, 5-пт, 6-сб, 7-вс): ");
