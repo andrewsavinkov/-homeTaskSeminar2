@@ -17,7 +17,7 @@ int GetSecondDigit (int value) // функция, извлекающая вто�
  return result; 
 }
 
-int number = GenerateNumber(3);
+int number = GenerateNumber(3); // генерируем псевдослучайное трехзначное число
 Console.WriteLine(number);
-int secondDigit = GetSecondDigit(number);
+int secondDigit = GetSecondDigit(number); // извлекаем вторую цифру сгенерированного числа в формате int
 Console.WriteLine(secondDigit);
