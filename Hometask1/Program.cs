@@ -4,3 +4,20 @@
 918 -> 1
 */
 
+int GenerateNumber (int digits) // функция-генератор случайного числа с заданным количеством цифр
+{
+Random rnd = new Random();
+int result = rnd.Next(Convert.ToInt32(Math.Pow(10, digits-1)), Convert.ToInt32(Math.Pow(10, digits)));
+return result;
+}
+
+int GetSecondDigit (int value) // функция, извлекающая вторую цифру трехзначного числа в формате int
+{
+ int result = ((value % 100)-(value % 10))/10;
+ return result; 
+}
+
+int number = GenerateNumber(3);
+Console.WriteLine(number);
+int secondDigit = GetSecondDigit(number);
+Console.WriteLine(secondDigit);
